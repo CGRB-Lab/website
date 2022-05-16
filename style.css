@@ -1,0 +1,761 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    min-height: 8vh;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+
+nav{
+    display: flex;
+    padding: 0.5% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 80px;
+    border-radius: 15px;
+}
+
+.ilogo{
+    width: 167.25px;
+    margin-left: 3%;
+    border-radius: 15px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: -1%;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 450;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.fa-solid{
+    color: transparent;
+}
+
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(images/background_5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.body-1{
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.bodie{
+    background: white;
+    margin-top: -5%;
+}
+
+.bodies{
+    background: white;
+}
+
+.bodie p{
+    color: white;
+    text-color: white;
+    margin-left: 3%;
+    width: 80%;
+}
+
+.text-box{
+    width: 100%;
+    color: white;
+    position: relative;
+    margin-top: 19%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 66px;
+    color: white;
+    font-weight: 600;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.hero-btn:hover{
+    border: 3px solid black;
+    background: whitesmoke;
+    transition: 0.4s;
+    color: black;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 6vh;
+    font-size: 24px;
+    font-weight: 400;
+    color: red;
+    background: white;
+}
+
+h1{
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 40px;
+    color: black;
+}
+
+h3{
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 8.5%;
+    margin-top: 4%;
+    font-size: 44px;
+    color: black;
+}
+
+p{
+    width: 80%;
+    margin-left: 3%;
+    text-align: left;
+    padding: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+}
+
+.members{
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-box-1{
+    width: 80%;
+    margin-top: -4%;
+    padding: 100px;
+    text-align: left;
+    font-weight: 100;
+    line-height: 36px;
+    margin-left: 4%;
+}
+
+p10{
+    font-size: 24px;
+}
+
+p9{
+	margin-left: 2%;
+	color: white;
+	width: 80%;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+}
+
+p3{
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+
+.col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-left: 22%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    width: 56%;
+}
+
+.col a{
+    color: dodgerblue;
+}
+
+.col img{
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+h2{
+    margin-top: 1%;
+}
+
+.col p2{
+    font-size: 14px;
+    text-color: green;
+}
+
+.row-gal{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+    align-items: center;
+    margin-left: 5%;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+}
+
+.images{
+    display: flex;
+    border-radius: 20px;
+}
+
+.layer{
+    position: absolute;
+    margin-top: -14.2%;
+    height: 30.5%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: .5s ease;
+    background-color: cornflowerblue;
+}
+
+.container:hover .layer{
+    opacity: 0.75;
+}
+
+.text{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.layer2:hover{
+    opacity: 0.80;
+}
+
+.layer2{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.75%;
+    width: 340px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer3:hover{
+    opacity: 0.7;
+}
+
+.layer3{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 31.25%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer4:hover{
+    opacity: 0.7;
+}
+
+.layer4{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 31.5%;
+    width: 295px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer5:hover{
+    opacity: 0.7;
+}
+
+.layer5{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 370px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer6:hover{
+    opacity: 0.7;
+}
+
+.layer6{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30%;
+    width: 247px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer7:hover{
+    opacity: 0.7;
+}
+
+.layer7{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 305px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer8:hover{
+    opacity: 0.65;
+}
+
+.layer8{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 269px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer9:hover{
+    opacity: 0.75;
+}
+
+.layer9{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 338px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer10:hover{
+    opacity: 0.75;
+}
+
+.layer10{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer11:hover{
+    opacity: 0.75;
+}
+
+.layer11{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 29.5%;
+    width: 256px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer12:hover{
+    opacity: 0.75;
+}
+
+.layer12{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30%;
+    width: 327px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer13:hover{
+    opacity: 0.75;
+}
+
+.layer13{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.5%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer14:hover{
+    opacity: 0.75;
+}
+
+.layer14{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 31.15%;
+    width: 305px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer15:hover{
+    opacity: 0.75;
+}
+
+.layer15{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.85%;
+    width: 304px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer16:hover{
+    opacity: 0.75;
+}
+
+.layer16{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.85%;
+    width: 304px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer17:hover{
+    opacity: 0.75;
+}
+
+.layer17{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.85%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer18:hover{
+    opacity: 0.75;
+}
+
+.layer18{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 30.85%;
+    width: 300px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer19:hover{
+    opacity: 0.75;
+}
+
+.layer19{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 46%;
+    width: 200px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer20:hover{
+    opacity: 0.75;
+}
+
+.layer20{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 46.25%;
+    width: 180px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.layer21:hover{
+    opacity: 0.75;
+}
+
+.layer21{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 47%;
+    width: 220px;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: cornflowerblue;
+}
+
+.img1{
+    width: 300px;
+}
+
+.img2{
+    width: 340px;
+}
+
+.img3{
+    width: 300px;
+}
+
+.img4{
+    width: 295px;
+}
+
+.img5{
+    width: 370px;
+}
+
+.img6{
+    width: 247px;
+}
+
+.img7{
+    width: 305px;
+}
+
+.img8{
+    width: 269px;
+}
+
+.img9{
+    width: 338px;
+}
+
+.img10{
+    width: 300px;
+}
+
+.img11{
+    width: 256px;
+}
+
+.img12{
+    width: 327px;
+}
+
+.img13{
+    width: 300px;
+}
+
+.img14{
+    width: 305px;
+}
+
+.img15{
+    width: 304px;
+}
+
+.img16{
+    width: 304px;
+}
+
+.img17{
+    width: 300px;
+}
+
+.img18{
+    width: 300px;
+}
+
+.img19{
+    width: 200px;
+}
+
+.img20{
+    width: 180px;
+}
+
+.img21{
+    width: 220px;
+}
+
+.fa-address-card{
+    color: black;
+    font-size: 40px;
+    margin: 8px;
+    margin-right: 30px;
+}
+
+.fa-phone{
+    color: black;
+    font-size: 28px;
+    margin: 8px;
+    margin-right: 30px;
+}
+
+.fa-at{
+    color: black;
+    font-size: 28px;
+    margin: 8px;
+    margin-right: 30px;
+}
+
+.Contact-us{
+	width: 80%;
+	margin-left: 15%;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	display: flex;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    margin-top: 1%;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col h5{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 19px 0;
+    background: white;
+}
+
+.footer-1{
+    width: 100%;
+    text-align: center;
+    padding: 19px 0;
+    background: white;
+    margin-top: 1.2%;
+}
