@@ -8,6 +8,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9f38be44ee.js" crossorigin="anonymous"></script>
+        <script>var images=new Array('images/background1.jpg','images/background4.jpg','images/background_5.jpg');
+            var nextimage=0; doSlideshow();
+            function doSlideshow(){
+                if(nextimage>=images.length){nextimage=0;}
+                $('body')
+                .css('background-image','url("'+images[nextimage++]+'")')
+                .fadeIn(500,function(){
+                setTimeout(doSlideshow,1000);
+                });
+            }
+        </script>
     </head>
     <body>
         <section class="header">
